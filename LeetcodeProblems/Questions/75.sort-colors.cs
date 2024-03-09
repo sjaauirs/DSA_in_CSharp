@@ -53,7 +53,7 @@
  */
 
 // @lc code=start
-public class Solution {
+public class Solution3 {
     public void SortColors(int[] nums) {
         int posl = 0; 
         int posh = nums.Length-1;

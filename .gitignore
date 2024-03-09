@@ -3,3 +3,5 @@ temp/
 */bin/
 */obj/
 */.vs
+/.vs
+/.vscode/extensions.json

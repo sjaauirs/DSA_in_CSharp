@@ -66,7 +66,7 @@
  */
 
 // @lc code=start
-/*
+
   public class ListNode {
       public int val;
      public ListNode next;
@@ -75,9 +75,9 @@
           next = null;
       }
   }
-  */
+  
  
-public class Solution {
+public class Solution1 {
     public bool HasCycle(ListNode head) {
         if(head== null || head.next == null){
             return false;

@@ -4,21 +4,9 @@
     {
         static void Main(string[] args)
         {
-            FastIO io = new FastIO(); 
-               int elementsinTestCase = io.NextInt();
-               var InputArray = new int[elementsinTestCase];
-               int z = 0;
-               while (elementsinTestCase-- > 0) {
-                   int n = io.NextInt();
-                InputArray[z] = n;
-                z++;
-               }
-               int target = io.NextInt();
-
-               Solution s = new Solution();
-            var result=    s.NumSubarrayProductLessThanK(InputArray, target);
-                
-                io.Flush();
+       var Prb202 = new SolutionHappy();
+            var result = Prb202.IsHappy(19);
+            Console.WriteLine(result);
         }
     }
 
