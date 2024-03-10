@@ -55,7 +55,7 @@
  *     }
  * }
  */
-public class Solution {
+public class SolutionPalinDromeLinkedList {
     public bool IsPalindrome(ListNode head) {
      var slow = head; 
         var fast = head; 

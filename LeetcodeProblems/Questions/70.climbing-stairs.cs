@@ -7,7 +7,7 @@
 // @lc code=start
 namespace LeetcodeProblems.Questions
 {
-    public class Solution
+    public class SolutionClimbingStairs
     {
 
         // This is actually the expression for Fibonacci numbers, but there is one thing to notice, the value of ways(n) is equal to fibonacci(n+1)

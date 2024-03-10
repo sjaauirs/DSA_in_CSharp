@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-       var Prb202 = new SolutionHappy();
-            var result = Prb202.IsHappy(19);
+       var prob = new Solution();
+            int[] inputArray = { 1,4,4 }; int k = 4;
+            var result = prob.MinSubArrayLen(k, inputArray);
             Console.WriteLine(result);
         }
     }

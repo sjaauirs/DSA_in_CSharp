@@ -77,7 +77,7 @@
   }
   
  
-public class Solution1 {
+public class SolutionLnkedlistCycle {
     public bool HasCycle(ListNode head) {
         if(head== null || head.next == null){
             return false;

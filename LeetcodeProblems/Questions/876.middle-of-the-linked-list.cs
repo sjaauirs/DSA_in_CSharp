@@ -58,7 +58,7 @@
  *     }
  * }
  */
-public class Solution4 {
+public class SolutionMiddleNode{
     public ListNode MiddleNode(ListNode head) {
         var slow = head; 
         var fast = head; 

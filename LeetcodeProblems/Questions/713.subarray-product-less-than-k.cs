@@ -48,7 +48,7 @@
  */
 
 // @lc code=start
-public class Solution2 {
+public class SolutionSubArrayProductLessthanK {
     public int NumSubarrayProductLessThanK(int[] nums, int k) {
          int i=0; int j=0;  
         int count = 0; 
