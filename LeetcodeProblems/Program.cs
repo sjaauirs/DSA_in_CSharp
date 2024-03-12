@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-       var prob = new Solution();
+       var prob = new LongestSubstringWithAtMostKDistinct();
             int[] inputArray = { 1,4,4 }; int k = 4;
-            var result = prob.MinSubArrayLen(k, inputArray);
+            var result = prob.LengthOfLongestSubstringKDistinct("aba" , 1);
             Console.WriteLine(result);
         }
     }

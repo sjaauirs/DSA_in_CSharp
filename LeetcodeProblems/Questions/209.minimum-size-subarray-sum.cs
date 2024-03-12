@@ -56,9 +56,10 @@
  */
 
 // @lc code=start
+using System.Drawing;
 using System.Reflection.Metadata.Ecma335;
 
-public class Solution {
+public class MinimumSizeSubarraySum {
     public int MinSubArrayLen(int target, int[] nums) {
         #region MySolution- 4 Hrs
         //int i = 0;
