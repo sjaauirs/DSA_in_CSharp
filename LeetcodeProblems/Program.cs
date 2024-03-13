@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-       var prob = new LongestSubstringWithAtMostKDistinct();
-            int[] inputArray = { 1,4,4 }; int k = 4;
-            var result = prob.LengthOfLongestSubstringKDistinct("aba" , 1);
+       var prob = new Solution();
+            int[] inputArray = { 3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4 };
+            var result = prob.TotalFruit(inputArray);
             Console.WriteLine(result);
         }
     }
@@ -40,3 +40,4 @@
         }
 }
 
+ 
