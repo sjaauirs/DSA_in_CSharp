@@ -5,8 +5,9 @@
         static void Main(string[] args)
         {
        var prob = new Solution();
-            int[] inputArray = { 3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4 };
-            var result = prob.TotalFruit(inputArray);
+            int[] inputArray = { 1, 4, 8, 13 };
+            int k = 5;
+            var result = prob.MaxFrequency(inputArray , k);
             Console.WriteLine(result);
         }
     }
