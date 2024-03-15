@@ -67,7 +67,8 @@
 // @lc code=start
 using System;
 
-public class Solution {
+public class FrequencyProblem
+{
     public int MaxFrequency(int[] nums, int k) {
         Array.Sort(nums);
         int maxWindowSize = 0; 
