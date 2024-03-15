@@ -64,8 +64,8 @@
  */
 
 // @lc code=start
-public class Solution {
-    public int MissingNumber(int[] nums) {
+public class MissingNumber {
+    public int GetMissingNumber(int[] nums) {
         int i = 0;
 
         while (i < nums.Length)
