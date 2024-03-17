@@ -4,11 +4,20 @@
     {
         static void Main(string[] args)
         {
-       var prob = new Solution();
-            int[] inputArray = { 1, 4, 8, 13 };
-            int k = 5;
-            var result = prob.MaxFrequency(inputArray , k);
-            Console.WriteLine(result);
+       var prob = new Solution1();
+            int[][] inputArray = new int[][]
+             {
+                new int[] { 1, 2 },
+                new int[] { 3, 5 },
+                new int[] { 6, 7 },
+                  new int[] { 8, 10 },
+                new int[] { 12, 18 }
+             };
+
+            int[] newIntal = { 4, 8 };
+             var result = prob.Insert(inputArray , newIntal);
+          
+            Console.ReadLine();
         }
     }
 
