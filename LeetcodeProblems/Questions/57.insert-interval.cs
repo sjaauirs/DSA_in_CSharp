@@ -60,7 +60,7 @@
  */
 
 // @lc code=start
-public class Solution {
+public class InsertInterval {
     public int[][] Insert(int[][] interls, int[] newIntal) {
 
         if (interls == null || interls.Length == 0)
@@ -82,9 +82,8 @@ public class Solution {
         {
 
             Console.WriteLine("Processing {0} with {1}", intervals[i], newInterval);
-            Console.WriteLine("Donothing -- Add to result Array");
-            Results.Add(intervals[i]);
-            i++;
+            Console.WriteLine(" Not matching Donothing -- Add to result Array");
+            Results.Add(intervals[i++]);
         }
 
         while (i < intervals.Count && intervals[i].Start <= newInterval.End)

@@ -1,21 +1,22 @@
-﻿namespace LeetcodeProblems
+﻿using LeetcodeProblems.Questions.CanAttendMeetings;
+
+namespace LeetcodeProblems
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-       var prob = new Solution1();
+       var prob = new LeetcodeProblems.Questions.CanAttendMeetings.Solution();
             int[][] inputArray = new int[][]
              {
-                new int[] { 1, 2 },
-                new int[] { 3, 5 },
-                new int[] { 6, 7 },
-                  new int[] { 8, 10 },
-                new int[] { 12, 18 }
+                new int[] { 15, 16 },
+                new int[] { 10, 15 },
+                new int[] { 16, 25 }
              };
 
             int[] newIntal = { 4, 8 };
-             var result = prob.Insert(inputArray , newIntal);
+            var result = prob.CanAttendMeetings(inputArray);
+
           
             Console.ReadLine();
         }
