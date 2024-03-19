@@ -56,7 +56,8 @@
  */
 
 // @lc code=start
-public class Solution {
+public class MinimalKSumSolution
+{
     public long MinimalKSum(int[] nums, int k) {
 
 

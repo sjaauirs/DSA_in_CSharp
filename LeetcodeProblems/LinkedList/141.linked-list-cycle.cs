@@ -67,16 +67,11 @@
 
 // @lc code=start
 
-  public class ListNode {
-      public int val;
-     public ListNode next;
-      public ListNode(int x) {
-          val = x;
-          next = null;
-      }
-  }
-  
- 
+
+
+
+using LeetcodeProblems.Helpers;
+
 public class SolutionLnkedlistCycle {
     public bool HasCycle(ListNode head) {
         if(head== null || head.next == null){

@@ -53,6 +53,9 @@
  */
 
 // @lc code=start
+
+using LeetcodeProblems.Helpers;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -64,9 +67,10 @@
  *     }
  * }
  */
-public class Solution {
+public class Solutionx {
     public ListNode ReverseList(ListNode head) {
-        
+
+        return head;
     }
 }
 // @lc code=end
