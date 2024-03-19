@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetcodeProblems.Questions.CanAttendMeetings
+namespace LeetcodeProblems.Questions.Intervals
 {
     public class Solution
     {
@@ -93,15 +93,15 @@ namespace LeetcodeProblems.Questions.CanAttendMeetings
 
         public int Compare(Interval x, Interval y)
         {
-            if(x.End > y.Start)
+            if (x.End > y.Start)
             {
-                return 1; 
+                return 1;
             }
 
             if (x.End == y.Start)
             {
-               if(x.Start < y.Start) {  return 1; }
-               else { return 0; }
+                if (x.Start < y.Start) { return 1; }
+                else { return 0; }
             }
 
             return 0;

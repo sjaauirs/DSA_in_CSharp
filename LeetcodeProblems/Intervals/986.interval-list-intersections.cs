@@ -54,6 +54,8 @@
  * endj < startj+1
  * 
  * 
+ * NOTE : DesignGuru solution work with 2 pointer also. worth read.
+ * 
  */
 
 // @lc code=start
