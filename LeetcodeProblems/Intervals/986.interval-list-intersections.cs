@@ -60,7 +60,8 @@
 
 // @lc code=start
 
-public class Solution {
+public class IntervalIntersectionSolution
+{
     public int[][] IntervalIntersection(int[][] firstList, int[][] secondList) {
         // Each intervals is pairwise disjoint and in sorted order.
 

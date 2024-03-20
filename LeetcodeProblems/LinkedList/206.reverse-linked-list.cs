@@ -54,6 +54,8 @@
 
 // @lc code=start
 
+
+
 using LeetcodeProblems.Helpers;
 
 /**
@@ -67,10 +69,24 @@ using LeetcodeProblems.Helpers;
  *     }
  * }
  */
-public class Solutionx {
+public class ReverseListSolution
+{
     public ListNode ReverseList(ListNode head) {
+        ListNode current = head; // current node that we will be processing
+        ListNode previous = null; // previous node that we have processed
+        ListNode next = null; // will be used to temporarily store the next node
 
-        return head;
+        while (current != null)
+        {
+            next = current.next; // temporarily store the next node
+            current.next = previous; // reverse the current node
+            // before we move to the next node, point previous to the current node
+            previous = current;
+            current = next; // move on the next node
+        }
+        // after the loop current will be pointing to 'null' and 'previous' will be the 
+        // new head
+        return previous;
     }
 }
 // @lc code=end

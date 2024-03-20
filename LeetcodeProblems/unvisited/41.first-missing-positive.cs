@@ -56,7 +56,7 @@
 
 // @lc code=start
 public class FirstMissingPositive {
-    public int solution(int[] nums) {
+    public int FirstMissingsolution(int[] nums) {
         int i = 0; 
 
         while( i < nums.Length)
