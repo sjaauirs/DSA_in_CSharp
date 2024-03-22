@@ -61,45 +61,51 @@ using LeetcodeProblems.Helpers;
  *     }
  * }
  */
-public class Solution {
+public class ReverseBetweenSolution
+{
     public ListNode ReverseBetween(ListNode head, int left, int right) {
 
         //#region - MY SOLUTION WITH MULTIPLE ERRORS
-        //if (left == right)
-        //    return head;
+        if (left == right)
+            return head;
 
-        //ListNode cur = head;
-        //ListNode? previous = null;
-        //ListNode? next = null;
+        ListNode cur = head;
+        ListNode? previous = null;
+        ListNode? next = null;
 
-        //int i = 1;
+        int i = 1;
 
-        //while (cur.next != null && i <= left-1) {
-        //    previous = cur;
-        //    cur = cur.next;
-        //    i++;
-        //}
-        //var lastCorrectnode = previous;
-        //var firstIncorrectNode = cur;
+        while (cur.next != null && i <= left - 1)
+        {
+            previous = cur;
+            cur = cur.next;
+            i++;
+        }
+        var lastCorrectnode = previous;
+        var firstIncorrectNode = cur;
 
-        
-        //while (i < right-1) {
-        //    next = cur.next;
-        //    var achualNext = next?.next;
-        //    next.next = cur;
-        //    cur = next;
-        //    next = achualNext;
-        //    i++;
 
-        //}
-        //if(lastCorrectnode != null) { lastCorrectnode.next = cur; }
-        //else { head= cur; }
-       
-        //firstIncorrectNode.next = next;
+        while (i <= right)
+        {
+            next = cur?.next;
+            cur.next = previous;
+            previous = cur;
+            cur = next;
+            i++;
+        }
 
-        //return head;
+        if (lastCorrectnode != null)
+        {
+            lastCorrectnode.next = previous;
+        }
+        else
+        {
+            head = previous;
+        }
 
-        //#endregion
+        firstIncorrectNode.next = next;
+
+        return head;
     }
 }
 // @lc code=end

@@ -17,13 +17,8 @@ namespace LeetcodeProblems
             //head.next.next.next.next = new ListNode(5);
 
             Solution solution = new Solution();
-            ListNode result = solution.ReverseBetween(head, 1, 2);
-            Console.Write("Nodes of the reversed LinkedList are: ");
-            while (result != null)
-            {
-                Console.Write(result.val + " ");
-                result = result.next;
-            }
+            var result = solution.BaseNeg2(12);
+            
 
             Console.ReadLine();
         }
