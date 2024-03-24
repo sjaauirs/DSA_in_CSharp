@@ -103,16 +103,22 @@ public class NextGreaterElementsSolution
 
         for (int i = 2 * n - 1; i >= 0; --i)
         {
-            while (stack.Count != 0 && nums[stack.Peek()] <= nums[i % n])
+            while (stack.Count != 0 && nums[stack.Peek()] <= nums[i % n])         // while there is a elemrnt is stack which is less than num[index] it should be poped
             {
                 stack.Pop();
             }
-            result[i % n] = stack.Count == 0 ? -1 : nums[stack.Peek()];
+            result[i % n] = stack.Count == 0 ? -1 : nums[stack.Peek()];    // either stack became empty or number on top of stack is > nums, so put the valuein result
             stack.Push(i % n);
         }
 
         return result;
     }
 }
+
+/*
+ * Solution By Design Guru is simple must read again 
+ * 
+ * 
+ */
 // @lc code=end
 

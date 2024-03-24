@@ -42,7 +42,7 @@
 
 // @lc code=start
 public class FindDisappearedNumbers {
-    public IList<int> Solution(int[] nums)
+    public IList<int> FindDisappearedNumbersSolution(int[] nums)
     {
 
         int i = 0;

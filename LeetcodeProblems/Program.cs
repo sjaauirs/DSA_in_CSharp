@@ -10,11 +10,13 @@ namespace LeetcodeProblems
         static void Main(string[] args)
         {
             //   int[] input = { 1, 2, 3, 4, 5 };
-             var input = "/a//b////c/d//././/..";
-            //var input = "/../";
-            Solution solution = new Solution();
-            var result = solution.SimplifyPath(input);
-            
+           //   var input = "/a//b////c/d//././/..";
+            var input = "/../";
+            string[] ops= { "5", "-2", "4", "C", "D", "9", "+", "+" };
+
+            SimplifyPathSolution solution = new SimplifyPathSolution();
+
+          var result=  solution.SimplifyPath(input);
 
             Console.ReadLine();
         }

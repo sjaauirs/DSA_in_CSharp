@@ -66,10 +66,10 @@
  */
 
 // @lc code=start
-public class Solution {
-    public int[] NextGreaterElement(int[] nums1, int[] nums2) {
+//public class Solution {
+//    public int[] NextGreaterElement(int[] nums1, int[] nums2) {
         
-    }
-}
+//    }
+//}
 // @lc code=end
 

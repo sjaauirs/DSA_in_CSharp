@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetcodeProblems.Questions.Intervals
 {
-    public class Solution
+    public class CanAttendMeetingsSolution
     {
         public bool CanAttendMeetings(int[][] interls)
         {

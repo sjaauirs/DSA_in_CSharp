@@ -79,45 +79,43 @@
 using System.Collections.Generic;
 using System.Text;
 
-public class Solution {
+public class SimplifyPathSolution
+{
     public string SimplifyPath(string path) {
 
         var stack = new Stack<string>();
         var paths = path.Split('/');
-        var popCount = 0;
         foreach (var str in paths)
         {
             if (str == ".." && stack.Count > 0)
             {
-               popCount++;
+                stack.Pop();
                 continue;
             }
-            if (str == "." || str == " " || (str == "\\" && stack.Peek() == "\\")) { continue; }
+            if (str == "." || str == "" || (str == "\\" && stack.Peek() == "\\")) { continue; }
+            if(str == "..") { continue; }
             stack.Push(str);
 
 
         }
-        while (stack.Count > 0 && popCount > 0)
-        {
-            while (stack.Count> 0 && stack.Peek() == "") { stack.Pop(); }
-            while (stack.Count > 0 && stack.Peek() != "" && popCount > 0) { stack.Pop(); popCount--; }
-        }
-        if(stack.Count == 0) { return "/"; }
+        if (stack.Count == 0) { return "/"; }
         var res = "";
         var reverseStack = new Stack<string>();
         foreach (var str in stack)
         {
             if (!string.IsNullOrEmpty(str))
             {
-               reverseStack.Push("/"+str);
+                reverseStack.Push("/" + str);
             }
         }
 
         foreach (var str in reverseStack)
         {
-           res += str;
+            res += str;
         }
         return res;
+
+      
     }
 }
 // @lc code=end
