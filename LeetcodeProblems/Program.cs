@@ -9,15 +9,11 @@ namespace LeetcodeProblems
         // Customise to call any Specific problem
         static void Main(string[] args)
         {
-
-            ListNode head = new ListNode(3);
-            head.next = new ListNode(5);
-            //head.next.next = new ListNode(3);
-            //head.next.next.next = new ListNode(4);
-            //head.next.next.next.next = new ListNode(5);
-
+            //   int[] input = { 1, 2, 3, 4, 5 };
+             var input = "/a//b////c/d//././/..";
+            //var input = "/../";
             Solution solution = new Solution();
-            var result = solution.BaseNeg2(12);
+            var result = solution.SimplifyPath(input);
             
 
             Console.ReadLine();
