@@ -66,10 +66,24 @@
  */
 
 // @lc code=start
-//public class Solution {
-//    public int[] NextGreaterElement(int[] nums1, int[] nums2) {
-        
-//    }
-//}
+public class SolutionNextGreaterElement{
+    public int[] NextGreaterElement(int[] nums1, int[] nums2) {
+        var stack = new Stack<int>();
+        var map = new Dictionary<int, int>();
+        var result = new int[nums1.Length];
+        foreach (var x in nums2) {
+        while(stack.Count !=0 && x > stack.Peek())
+            {
+              var item=stack.Pop();
+              map.Add(item, x);
+            }
+        stack.Push(x);
+        }
+        // Map the remaining numbers on the stack to -1
+        for (int i = 0; i < nums1.Length; i++)
+            nums1[i] = map.GetValueOrDefault(nums1[i], -1);
+        return nums1;
+    }
+}
 // @lc code=end
 

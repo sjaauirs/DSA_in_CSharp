@@ -12,11 +12,12 @@ namespace LeetcodeProblems
             //   int[] input = { 1, 2, 3, 4, 5 };
            //   var input = "/a//b////c/d//././/..";
             var input = "/../";
-            string[] ops= { "5", "-2", "4", "C", "D", "9", "+", "+" };
+            int[] nums1= {5,10,-5 };
+            int[] nums2 = { 1, 3,4, 2 };
 
-            SimplifyPathSolution solution = new SimplifyPathSolution();
+            Solution solution = new Solution();
 
-          var result=  solution.SimplifyPath(input);
+          var result=  solution.AsteroidCollision(nums1);
 
             Console.ReadLine();
         }
