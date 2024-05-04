@@ -1,5 +1,5 @@
-﻿using LeetcodeProblems.Helpers;
-using LeetcodeProblems.Questions;
+﻿using LeetcodeProblems.Array;
+using LeetcodeProblems.Helpers;
 
 namespace LeetcodeProblems
 {
@@ -9,15 +9,20 @@ namespace LeetcodeProblems
         // Customise to call any Specific problem
         static void Main(string[] args)
         {
-            //   int[] input = { 1, 2, 3, 4, 5 };
-           //   var input = "/a//b////c/d//././/..";
-            var input = "/../";
-            int[] nums1= {5,10,-5 };
-            int[] nums2 = { 1, 3,4, 2 };
+            int[] nums1 = { 1,2,3,4 };
 
-            Solution solution = new Solution();
+            int[] nums10= {1,2,3, 4};
+            int[] nums20 = { 5, 6,7, 8 };
+            int[] nums30 = { 9,10,11,12 };
+            int[][] nums2 = new int[3][];
+            nums2[0] = nums10;
+            nums2[1] = nums20;
+            nums2[2] = nums30;
+            var solution = new ProductExceptSelfSolution();
+            
+            solution.ProductExceptSelf(nums1);
 
-          var result=  solution.AsteroidCollision(nums1);
+
 
             Console.ReadLine();
         }

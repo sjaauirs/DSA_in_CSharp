@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-namespace LeetcodeProblems.unvisited
+namespace LeetcodeProblems.Others
 {
     public class SolutionClimbingStairs
     {
