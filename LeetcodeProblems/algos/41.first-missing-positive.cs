@@ -61,7 +61,7 @@ public class FirstMissingPositive {
 
         while( i < nums.Length)
         {
-            if (nums[i] > 0 && nums[i] < nums.Length)  // if it is a valid number
+            if (nums[i] > 0 && nums[i] < nums.Length)  // if it is a valid number  // CYCLE SORT
             {
                 if (nums[i] != nums[nums[i] - 1]) // number is not at correct position 
                 {
